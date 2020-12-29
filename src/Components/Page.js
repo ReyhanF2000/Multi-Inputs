@@ -53,7 +53,6 @@ export default function Page() {
             <MultiInput
                 key={item.id}
                 value={item.value}
-                color={state.length === 1 ? '#a2a2e44d' : 'red'}
                 onInputChange={(e) => handleInputChange(item.id, e)}
                 onClickRemove={() => handleRemove(item.id)}
             />

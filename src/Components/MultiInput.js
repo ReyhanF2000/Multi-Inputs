@@ -19,12 +19,12 @@ flex-grow:3;
 height:28px;
 border-radius:8px
 `
-export default function MultiInput({ value, color, onInputChange, onClickRemove }) {
+export default function MultiInput({ value, onInputChange, onClickRemove }) {
     console.log(value.length)
     return (
         <Wrapper>
             {value.length !== 0 && <Span onClick={onClickRemove}>
-                <FaMinusCircle color={color} />
+                <FaMinusCircle color={'red'} />
             </Span>}
             <Input
                 type='text'
